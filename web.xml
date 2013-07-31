@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor 
+	license agreements. See the NOTICE file distributed with this work for additional 
+	information regarding copyright ownership. The ASF licenses this file to 
+	You under the Apache License, Version 2.0 (the "License"); you may not use 
+	this file except in compliance with the License. You may obtain a copy of 
+	the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required 
+	by applicable law or agreed to in writing, software distributed under the 
+	License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS 
+	OF ANY KIND, either express or implied. See the License for the specific 
+	language governing permissions and limitations under the License. -->
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0" metadata-complete="true">
+
+	<description>Configuration as a service</description>
+	<display-name>Configuration as a service</display-name>
+
+
+	<!-- Define example application events listeners <listener> <listener-class>listeners.ContextListener</listener-class> 
+		</listener> <listener> <listener-class>listeners.SessionListener</listener-class> 
+		</listener -->
+
+	<servlet>
+		<servlet-name>KumbangConfigurator</servlet-name>
+		<servlet-class>kumbang.servlet.ConfiguratorServlet</servlet-class>
+		<!--load-on-startup>1</load-on-startup-->
+	</servlet>
+	<servlet>
+		<servlet-name>WCRLConfigurator</servlet-name>
+		<servlet-class>wcrl.servlet.ConfiguratorServlet</servlet-class>
+		<!--load-on-startup>1</load-on-startup-->
+	</servlet>
+	<servlet>
+		<servlet-name>ChocoConfigurator</servlet-name>
+		<servlet-class>choco.servlet.ConfiguratorServlet</servlet-class>
+		<!--load-on-startup>1</load-on-startup-->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>KumbangConfigurator</servlet-name>
+		<url-pattern>/kumbang</url-pattern>
+		<url-pattern>/kumbang/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>WCRLConfigurator</servlet-name>
+		<url-pattern>/wcrl</url-pattern>
+		<url-pattern>/wcrl/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChocoConfigurator</servlet-name>
+		<url-pattern>/choco</url-pattern>
+		<url-pattern>/choco/*</url-pattern>
+	</servlet-mapping>
+
+</web-app>

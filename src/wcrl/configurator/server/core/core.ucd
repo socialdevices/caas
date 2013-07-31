@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="core" size="1152,824" id="kumbang.configurator.server.core" metadata="uml2-1.0" initialized="true" tag="10" key="32303037303533312D3130206B756D62616E672E636F6E666967757261746F72">
+  <children xsi:type="editmodel:ClassEditModel" name="ConfigurationHandler" location="532,50" size="311,157" id="kumbang.configurator.server.core/ConfigurationHandler" runTimeClassModel="findCompleteConfiguration(Lkumbang.core.configuration.core.Configuration;),ConfigurationHandler(Ljava.util.logging.Logger;),cONFIGURATION_HAS_BECOME_INCONSISTENT,getConsequences(Lkumbang.core.configuration.core.Configuration;),reset(),init(Ljava.io.File;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="288,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="cONFIGURATION_HAS_BECOME_INCONSISTENT" id="kumbang.configurator.server.core/ConfigurationHandler#cONFIGURATION_HAS_BECOME_INCONSISTENT"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="156,90">
+      <children xsi:type="editmodel:MethodEditModel" name="ConfigurationHandler" id="kumbang.configurator.server.core/ConfigurationHandler#ConfigurationHandler(Ljava.util.logging.Logger;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findCompleteConfiguration" id="kumbang.configurator.server.core/ConfigurationHandler#findCompleteConfiguration(Lkumbang.core.configuration.core.Configuration;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getConsequences" id="kumbang.configurator.server.core/ConfigurationHandler#getConsequences(Lkumbang.core.configuration.core.Configuration;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="init" id="kumbang.configurator.server.core/ConfigurationHandler#init(Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="reset" id="kumbang.configurator.server.core/ConfigurationHandler#reset()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ModelManager" location="307,50" size="175,308" id="kumbang.configurator.server.core/ModelManager" runTimeClassModel="initModel(Ljava.lang.String;Lkumbang.configurator.server.core.ConfigurationHandler;),clearAll(),importModel(Ljava.lang.String;Ljava.lang.String;),lPARSE_SUFFIX,kumbang.configurator.server.core.ModelManager.ModelFileFilter,removeModel(Ljava.lang.String;),sERIALIZED_SUFFIX,sMODELS_SUFFIX,ground(Ljava.io.File;Ljava.io.File;),ModelManager(Ljava.util.logging.Logger;),getModelNames()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="152,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="lPARSE_SUFFIX" id="kumbang.configurator.server.core/ModelManager#lPARSE_SUFFIX"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="sERIALIZED_SUFFIX" id="kumbang.configurator.server.core/ModelManager#sERIALIZED_SUFFIX"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="sMODELS_SUFFIX" id="kumbang.configurator.server.core/ModelManager#sMODELS_SUFFIX"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="106,126">
+      <children xsi:type="editmodel:MethodEditModel" name="ModelManager" id="kumbang.configurator.server.core/ModelManager#ModelManager(Ljava.util.logging.Logger;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="clearAll" id="kumbang.configurator.server.core/ModelManager#clearAll()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getModelNames" id="kumbang.configurator.server.core/ModelManager#getModelNames()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ground" id="kumbang.configurator.server.core/ModelManager#ground(Ljava.io.File;Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="importModel" id="kumbang.configurator.server.core/ModelManager#importModel(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="initModel" id="kumbang.configurator.server.core/ModelManager#initModel(Ljava.lang.String;Lkumbang.configurator.server.core.ConfigurationHandler;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeModel" id="kumbang.configurator.server.core/ModelManager#removeModel(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="138,69">
+      <children xsi:type="editmodel:ClassEditModel" name="ModelFileFilter" size="138,67" id="kumbang.configurator.server.core/ModelManager$ModelFileFilter" runTimeClassModel="accept(Ljava.io.File;)">
+        <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+        <children xsi:type="editmodel:CompartmentEditModel" size="63,18">
+          <children xsi:type="editmodel:MethodEditModel" name="accept" id="kumbang.configurator.server.core/ModelManager$ModelFileFilter#accept(Ljava.io.File;)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+    </children>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ServerProperties" location="50,50" size="207,697" id="kumbang.configurator.server.core/ServerProperties" runTimeClassModel="currentProperties(),setBinPath(Ljava.lang.String;),lOG_PATH,setServerPort(I),dEFAULT_PORT,getParserClass(),dEFAULT_PARSER_CLASS,setParserClass(Ljava.lang.String;),getInstance(Ljava.lang.String;),resetProperties(),dEFAULT_ROOTDIR,getLogPath(),pARSER_CLASS,getModelSuffix(),dEFAULT_LOG_PATH,setModelPath(Ljava.lang.String;),getServerAddress(),sERVER_PORT,getRootDir(),dEFAULT_HOST,setModelSuffix(Ljava.lang.String;),getInstance(),sERVER_HOST,mODEL_SUFFIX,setServerAddress(Ljava.lang.String;),getBinPath(),getServerPort(),setRootDir(Ljava.lang.String;),rOOTDIR,dEFAULT_MODEL_PATH,dEFAULT_BIN_PATH,bIN_PATH,getModelPath(),setLogPath(Ljava.lang.String;),dEFAULT_MODEL_SUFFIX,mODEL_PATH">
+    <children xsi:type="editmodel:CompartmentEditModel" size="184,288">
+      <children xsi:type="editmodel:AttributeEditModel" name="bIN_PATH" id="kumbang.configurator.server.core/ServerProperties#bIN_PATH"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dEFAULT_BIN_PATH" id="kumbang.configurator.server.core/ServerProperties#dEFAULT_BIN_PATH"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dEFAULT_HOST" id="kumbang.configurator.server.core/ServerProperties#dEFAULT_HOST"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dEFAULT_LOG_PATH" id="kumbang.configurator.server.core/ServerProperties#dEFAULT_LOG_PATH"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dEFAULT_MODEL_PATH" id="kumbang.configurator.server.core/ServerProperties#dEFAULT_MODEL_PATH"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dEFAULT_MODEL_SUFFIX" id="kumbang.configurator.server.core/ServerProperties#dEFAULT_MODEL_SUFFIX"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dEFAULT_PARSER_CLASS" id="kumbang.configurator.server.core/ServerProperties#dEFAULT_PARSER_CLASS"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dEFAULT_PORT" id="kumbang.configurator.server.core/ServerProperties#dEFAULT_PORT"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dEFAULT_ROOTDIR" id="kumbang.configurator.server.core/ServerProperties#dEFAULT_ROOTDIR"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lOG_PATH" id="kumbang.configurator.server.core/ServerProperties#lOG_PATH"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mODEL_PATH" id="kumbang.configurator.server.core/ServerProperties#mODEL_PATH"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mODEL_SUFFIX" id="kumbang.configurator.server.core/ServerProperties#mODEL_SUFFIX"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pARSER_CLASS" id="kumbang.configurator.server.core/ServerProperties#pARSER_CLASS"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rOOTDIR" id="kumbang.configurator.server.core/ServerProperties#rOOTDIR"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="sERVER_HOST" id="kumbang.configurator.server.core/ServerProperties#sERVER_HOST"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="sERVER_PORT" id="kumbang.configurator.server.core/ServerProperties#sERVER_PORT"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="120,360">
+      <children xsi:type="editmodel:MethodEditModel" name="currentProperties" id="kumbang.configurator.server.core/ServerProperties#currentProperties()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBinPath" id="kumbang.configurator.server.core/ServerProperties#getBinPath()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getInstance" id="kumbang.configurator.server.core/ServerProperties#getInstance()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getInstance" id="kumbang.configurator.server.core/ServerProperties#getInstance(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLogPath" id="kumbang.configurator.server.core/ServerProperties#getLogPath()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getModelPath" id="kumbang.configurator.server.core/ServerProperties#getModelPath()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getModelSuffix" id="kumbang.configurator.server.core/ServerProperties#getModelSuffix()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getParserClass" id="kumbang.configurator.server.core/ServerProperties#getParserClass()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRootDir" id="kumbang.configurator.server.core/ServerProperties#getRootDir()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getServerAddress" id="kumbang.configurator.server.core/ServerProperties#getServerAddress()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getServerPort" id="kumbang.configurator.server.core/ServerProperties#getServerPort()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="resetProperties" id="kumbang.configurator.server.core/ServerProperties#resetProperties()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setBinPath" id="kumbang.configurator.server.core/ServerProperties#setBinPath(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLogPath" id="kumbang.configurator.server.core/ServerProperties#setLogPath(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setModelPath" id="kumbang.configurator.server.core/ServerProperties#setModelPath(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setModelSuffix" id="kumbang.configurator.server.core/ServerProperties#setModelSuffix(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setParserClass" id="kumbang.configurator.server.core/ServerProperties#setParserClass(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setRootDir" id="kumbang.configurator.server.core/ServerProperties#setRootDir(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setServerAddress" id="kumbang.configurator.server.core/ServerProperties#setServerAddress(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setServerPort" id="kumbang.configurator.server.core/ServerProperties#setServerPort(I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=3;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
