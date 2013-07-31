@@ -1,2 +1,9 @@
 *.log
-*.pyc
+*.class
+*.o
+*.a
+*.so
+*.dll
+*.exe
+
+
